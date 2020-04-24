@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
+import { Link } from "gatsby"
 import Layout from "../components/Layout"
-import '../sass/style.scss'
 
-export default class index extends Component {
+export default class blog extends Component {
   render() {
     return (
-      <> 
+      <>
         <Layout>
-          <div>Main Page</div>
+          <h2>Blog Page</h2>
+          <Link to="/">Back to Home</Link>
         </Layout>
       </>
     )

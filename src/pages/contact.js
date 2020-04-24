@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import Layout from "../components/Layout"
-import '../sass/style.scss'
 
-export default class index extends Component {
+export default class contact extends Component {
   render() {
     return (
       <> 
         <Layout>
-          <div>Main Page</div>
+          <h2>Contact Page</h2>
         </Layout>
       </>
     )
