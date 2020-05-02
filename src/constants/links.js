@@ -1,18 +1,22 @@
 export default [
   {
     path: "/",
-    text: "home",
+    text: "Home",
   },
   {
-    path: "/tours",
-    text: "tours",
+    path: "/about",
+    text: "About",
   },
   {
-    path: "/blog",
-    text: "blog",
+    path: "/services",
+    text: "Services",
   },
   {
     path: "/contact",
-    text: "contact",
+    text: "Contact",
+  },
+  {
+    path: "/pricing",
+    text: "Pricing",
   },
 ]
