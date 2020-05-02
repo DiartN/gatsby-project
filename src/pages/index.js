@@ -1,9 +1,12 @@
 import React, { Component } from 'react'
 import Layout from "../components/Layout"
+import Footer from "../components/footer"
+// Pages
 import About from "../pages/about"
 import Services from "../pages/services"
 import Pricing from "../pages/pricing"
 import Contact from "../pages/contact"
+// Assets
 import SliderImage1 from '../img/Slider-img1.jpg'
 
 export default class index extends Component {
@@ -43,6 +46,7 @@ export default class index extends Component {
         <Services />
         <Pricing />
         <Contact />
+        <Footer />
       </>
     )
   }
