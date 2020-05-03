@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '../components/Container'
+import JSONData from '../data.json';
 
 export default function services() {
     return (
@@ -12,26 +13,18 @@ export default function services() {
                         <div class="Line"></div>
                         <div class="Serviceside">
                             <ul>
-                                <li class="Development">
-                                    <a href="#services">
-                                        <h4>DEVELOPMENT</h4>
-                                    </a>
-                                </li>
-                                <li class="Desdin">
-                                    <a href="#services">
-                                        <h4>DESIGN</h4>
-                                    </a>
-                                </li>
-                                <li class="Concept">
-                                    <a href="#services">
-                                        <h4>CONCEPT</h4>
-                                    </a>
-                                </li>
-                                <li class="System">
-                                    <a href="#services">
-                                        <h4>SYSTEM</h4>
-                                    </a>
-                                </li>
+                                {JSONData.content.map((data, index) => {
+                                    return (
+                                        <>
+                                            <li class={data.className}>
+                                                <a href="#services">
+                                                    <h4 key={`content_item_${index}`}>{data.item}</h4>
+                                                    <p key={`content_item_${index}`}>{data.price}</p>
+                                                </a>
+                                            </li>
+                                        </>
+                                    )
+                                })}
                             </ul>
                         </div>
                     </div>
