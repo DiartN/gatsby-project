@@ -1,21 +1,21 @@
 {
     "content": [{
-            "item": "Diart Test",
+            "item": "Development",
             "price": "2,500",
             "className": "Development"
         },
         {
-            "item": "Diart Test 2",
+            "item": "Design",
             "price": "3,500",
             "className": "Desdin"
         },
         {
-            "item": "Diart Test 3",
+            "item": "Web Design",
             "price": "4,500",
             "className": "Concept"
         },
         {
-            "item": "Diart Test 4",
+            "item": "Marketing",
             "price": "5,500",
             "className": "System"
         }
