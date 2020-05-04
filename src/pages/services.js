@@ -1,25 +1,25 @@
 import React from 'react'
 import Container from '../components/Container'
-import JSONData from '../data.json';
+import Services from '../api/data.json';
 
 export default function services() {
     return (
         <>
             <Container>
-                <div class="Services_sec" id="services">
-                    <div class="Center">
-                        <h2>our Services</h2>
-                        <p> Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent<br /> taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                        <div class="Line"></div>
-                        <div class="Serviceside">
+                <div className="Services_sec" id="services">
+                    <div className="Center">
+                        <h2>{Services.title}</h2>
+                        <p> {Services.description}</p>
+                        <div className="Line"></div>
+                        <div className="Serviceside">
                             <ul>
-                                {JSONData.content.map((data, index) => {
+                                {Services.content.map((data, index) => {
                                     return (
                                         <>
-                                            <li class={data.className}>
+                                            <li className={data.className}>
                                                 <a href="#services">
-                                                    <h4 key={`content_item_${index}`}>{data.item}</h4>
-                                                    <p key={`content_item_${index}`}>{data.price}</p>
+                                                    <h4 key={`${index}`}>{data.item}</h4>
+                                                    <p  key={`${index}`}>{data.price}</p>
                                                 </a>
                                             </li>
                                         </>
